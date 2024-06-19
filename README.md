@@ -5,7 +5,6 @@
 In this lab, I apply additional filters to SQL queries to retrieve specific information from a database. I use standard SQL operators to filter data based on particular dates and times. Throughout this process, I execute SQL queries using the MariaDB shell.
 This is a Quciklabs-based project hosted on the Google Cloud platform.
 '
-
 ### Skills Learned
 
 - Writing SQL queries to retrieve data from databases
@@ -13,14 +12,12 @@ This is a Quciklabs-based project hosted on the Google Cloud platform.
 - Using comparison and combining multiple conditions in SQL queries to narrow down search results.
 - Interacting with the MariaDB shell and reconnecting to the database if the session is unintentionally exited
 '
-
 ### Tools and Environment Used
 
 - MariaDB
 - Linux
+
 '
-
-
 ## Scenario
 In this project, you’re investigating a recent security incident.
 
