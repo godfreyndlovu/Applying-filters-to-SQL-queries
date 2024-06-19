@@ -25,14 +25,14 @@ You need to gather information about login attempts for certain dates and times.
 
 You’ll first need to retrieve login events made after a certain date. Second, you’ll narrow the focus of the search to filter logins in a date range. Third, you’ll investigate logins that were made at certain times. 
 Finally, filter login attempts based on their event IDs.
-
+'
 ## My Procedure 
-I structured the procedure into four main tasks, as demonstrated below:
+**I structured the procedure into four main tasks, as demonstrated below:**
 
 ### Task 1. Retrieve login attempts after a certain date 
 In this task, I am investigating a recent security incident. To do this, I need to gather information about login attempts made after a certain date.
 I carried out this task in two steps: 
-
+'
 1. To retrieve data for login attempts made after '2022-05-09', I completed the SQL query using the greater than operator:
 
 ```
@@ -44,7 +44,7 @@ WHERE login_time > '2022-05-09';
 
 
 The number of login attempts made after '2022-05-09' is **125**.
-
+'
 
 2. Based on my initial query, I now needed to expand the date range to include login attempts made on or after '2022-05-09'. To do this, I completed the SQL query using the greater than or equal to operator:
 
@@ -56,10 +56,11 @@ WHERE login_time >= '2022-05-09';
 ![Z2](https://github.com/godfreyndlovu/Applying-filters-to-SQL-queries/assets/102636518/8c28d358-5216-49c0-80b3-526b26d10b86)
 
 The number of login attempts made from 2022-05-09 onward is **165**.
-
+'
 
 ### Task 2. Retrieve login attempts after a certain date 
-In this task, I needed to narrow the focus of my search. I needed exclude login attempts made after 2022-05-11. To achieve this, I used the BETWEEN and AND operators to return results between '2022-05-09' and '2022-05-11':
+In this task, I needed to narrow the focus of my search. I needed exclude login attempts made after 2022-05-11. 
+To achieve this, I used the BETWEEN and AND operators to return results between '2022-05-09' and '2022-05-11':
 
 ```
 SELECT *
@@ -69,11 +70,13 @@ WHERE login_time BETWEEN '2022-05-09' AND '2022-05-11';
 ![Z3](https://github.com/godfreyndlovu/Applying-filters-to-SQL-queries/assets/102636518/a5566657-c170-4c30-8f99-f2b184ef4a65)
 
 **123** login attempts were made between 2022-05-09 and 2022-05-11.
+'
 
 ### Task 3.  Investigate logins at certain times 
 In this task, I needed to investigate logins that occurred at specific times. To begin, I needed to filter the data in the login_attempts table by login time (login_time).
 
 First, our organization's typical work hours begin at 07:00:00. I'd need to retrieve all login attempts made before 07:00:00 to understand more about the users who are logging in outside of these typical hours.
+
 
 1. I wrote a SQL query to retrieve data for login attempts made before '07:00:00'
 
