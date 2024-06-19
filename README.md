@@ -59,7 +59,7 @@ The number of login attempts made from 2022-05-09 onward is **165**.
 '
 
 ### Task 2. Retrieve login attempts after a certain date 
-In this task, I needed to narrow the focus of my search. I needed exclude login attempts made after 2022-05-11. 
+In this task, I needed to narrow the focus of my search. I needed to exclude login attempts made after 2022-05-11. 
 To achieve this, I used the BETWEEN and AND operators to return results between '2022-05-09' and '2022-05-11':
 
 ```
@@ -137,60 +137,3 @@ The username of the seventh result is **tmitchel**.
 ## Conclusion
 
 The objective of this project was to apply SQL querying skills to investigate a recent security incident by filtering and analyzing login data stored in a MariaDB database. The tasks involved retrieving specific records based on date, time, and event ID criteria using various SQL operators and functions. By completing these tasks, I demonstrated my skills in data filtering, date and time handling, range queries, and an overall ability to handle real-world data-related workloads pertinent to a cybersecurity analyst's job.
-
-
-
-
-
-
-
-
-<h2>Languages and Utilities Used</h2>
-
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
-
-<h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
-
-<h2>Program walk-through:</h2>
-
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
